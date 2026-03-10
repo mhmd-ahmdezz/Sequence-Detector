@@ -1,0 +1,648 @@
+{
+  "creator": "Yosys 0.62+9 (git sha1 1717fa018, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "overlap_mo_101": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "./rtl/overlapping_mo_101.sv:1.1-31.10"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "arstn": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "in": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "out": {
+          "direction": "output",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+        "$auto$ff.cc:337:slice$144": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "./rtl/overlapping_mo_101.sv:10.1-15.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 6 ],
+            "Q": [ 7 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$145": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "./rtl/overlapping_mo_101.sv:10.1-15.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 8 ],
+            "Q": [ 9 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$opt_expr.cc:609:replace_const_cells$166": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9 ],
+            "Y": [ 10 ]
+          }
+        },
+        "$auto$opt_expr.cc:609:replace_const_cells$168": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "Y": [ 11 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$154": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "./rtl/overlapping_mo_101.sv:22.42-22.42|./rtl/overlapping_mo_101.sv:19.5-25.12|/home/mohamedahmed/Utils/oss-cad-suite/lib/../share/yosys/techmap.v:593.44-593.84"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 12 ],
+            "Y": [ 13 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$157": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "./rtl/overlapping_mo_101.sv:22.42-22.42|./rtl/overlapping_mo_101.sv:19.5-25.12|/home/mohamedahmed/Utils/oss-cad-suite/lib/../share/yosys/techmap.v:593.44-593.84"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 14 ],
+            "Y": [ 15 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$158": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "./rtl/overlapping_mo_101.sv:22.42-22.42|./rtl/overlapping_mo_101.sv:19.5-25.12|/home/mohamedahmed/Utils/oss-cad-suite/lib/../share/yosys/techmap.v:593.44-593.84"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 16 ],
+            "Y": [ 17 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$159": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "./rtl/overlapping_mo_101.sv:22.42-22.42|./rtl/overlapping_mo_101.sv:19.5-25.12|/home/mohamedahmed/Utils/oss-cad-suite/lib/../share/yosys/techmap.v:593.44-593.84"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 18 ],
+            "B": [ 16 ],
+            "Y": [ 19 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$111": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "./rtl/overlapping_mo_101.sv:22.42-22.42|./rtl/overlapping_mo_101.sv:19.5-25.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 11 ],
+            "B": [ 10 ],
+            "Y": [ 20 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$128": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "./rtl/overlapping_mo_101.sv:21.42-21.42|./rtl/overlapping_mo_101.sv:19.5-25.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "B": [ 10 ],
+            "Y": [ 21 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$138": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "./rtl/overlapping_mo_101.sv:20.42-20.42|./rtl/overlapping_mo_101.sv:19.5-25.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 11 ],
+            "B": [ 9 ],
+            "Y": [ 22 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$147": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "./rtl/overlapping_mo_101.sv:22.42-22.42|./rtl/overlapping_mo_101.sv:19.5-25.12|/home/mohamedahmed/Utils/oss-cad-suite/lib/../share/yosys/techmap.v:601.20-601.31"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 19 ],
+            "B": [ 15 ],
+            "Y": [ 23 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$151": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "./rtl/overlapping_mo_101.sv:22.42-22.42|./rtl/overlapping_mo_101.sv:19.5-25.12|/home/mohamedahmed/Utils/oss-cad-suite/lib/../share/yosys/techmap.v:601.20-601.31"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 17 ],
+            "B": [ 15 ],
+            "Y": [ 24 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$153": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "./rtl/overlapping_mo_101.sv:22.42-22.42|./rtl/overlapping_mo_101.sv:19.5-25.12|/home/mohamedahmed/Utils/oss-cad-suite/lib/../share/yosys/techmap.v:601.20-601.31"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 24 ],
+            "B": [ 13 ],
+            "Y": [ 25 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$163": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "./rtl/overlapping_mo_101.sv:22.42-22.42|./rtl/overlapping_mo_101.sv:19.5-25.12|/home/mohamedahmed/Utils/oss-cad-suite/lib/../share/yosys/techmap.v:605.13-605.15"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 16 ],
+            "B": [ 14 ],
+            "Y": [ 26 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$165": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "./rtl/overlapping_mo_101.sv:22.42-22.42|./rtl/overlapping_mo_101.sv:19.5-25.12|/home/mohamedahmed/Utils/oss-cad-suite/lib/../share/yosys/techmap.v:605.13-605.15"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 26 ],
+            "B": [ 12 ],
+            "Y": [ 27 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$97": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 28 ],
+            "Y": [ 16 ]
+          }
+        },
+        "$auto$simplemap.cc:198:logic_reduce$142": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "./rtl/overlapping_mo_101.sv:19.24-19.24|./rtl/overlapping_mo_101.sv:19.5-25.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "B": [ 9 ],
+            "Y": [ 29 ]
+          }
+        },
+        "$auto$simplemap.cc:227:simplemap_lognot$113": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "./rtl/overlapping_mo_101.sv:22.42-22.42|./rtl/overlapping_mo_101.sv:19.5-25.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 20 ],
+            "Y": [ 5 ]
+          }
+        },
+        "$auto$simplemap.cc:227:simplemap_lognot$130": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "./rtl/overlapping_mo_101.sv:21.42-21.42|./rtl/overlapping_mo_101.sv:19.5-25.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 21 ],
+            "Y": [ 14 ]
+          }
+        },
+        "$auto$simplemap.cc:227:simplemap_lognot$140": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "./rtl/overlapping_mo_101.sv:20.42-20.42|./rtl/overlapping_mo_101.sv:19.5-25.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 22 ],
+            "Y": [ 28 ]
+          }
+        },
+        "$auto$simplemap.cc:227:simplemap_lognot$143": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "./rtl/overlapping_mo_101.sv:19.24-19.24|./rtl/overlapping_mo_101.sv:19.5-25.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 29 ],
+            "Y": [ 12 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$103": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "./rtl/overlapping_mo_101.sv:23.27-23.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "Y": [ 18 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$160": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "./rtl/overlapping_mo_101.sv:22.42-22.42|./rtl/overlapping_mo_101.sv:19.5-25.12|/home/mohamedahmed/Utils/oss-cad-suite/lib/../share/yosys/techmap.v:605.13-605.25"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x" ],
+            "B": [ 25 ],
+            "S": [ 27 ],
+            "Y": [ 6 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$161": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "./rtl/overlapping_mo_101.sv:22.42-22.42|./rtl/overlapping_mo_101.sv:19.5-25.12|/home/mohamedahmed/Utils/oss-cad-suite/lib/../share/yosys/techmap.v:605.13-605.25"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x" ],
+            "B": [ 23 ],
+            "S": [ 27 ],
+            "Y": [ 8 ]
+          }
+        }
+      },
+      "netnames": {
+        "$auto$rtlil.cc:3576:NotGate$167": {
+          "hide_name": 1,
+          "bits": [ 10 ],
+          "attributes": {
+          }
+        },
+        "$auto$rtlil.cc:3576:NotGate$169": {
+          "hide_name": 1,
+          "bits": [ 11 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:148:simplemap_reduce$150": {
+          "hide_name": 1,
+          "bits": [ 24 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:148:simplemap_reduce$162": {
+          "hide_name": 1,
+          "bits": [ 26 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:189:logic_reduce$141": {
+          "hide_name": 1,
+          "bits": [ 29 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_eqne$108": {
+          "hide_name": 1,
+          "bits": [ 20 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_eqne$125": {
+          "hide_name": 1,
+          "bits": [ 21 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_eqne$135": {
+          "hide_name": 1,
+          "bits": [ 22 ],
+          "attributes": {
+          }
+        },
+        "$procmux$12_CMP": {
+          "hide_name": 1,
+          "bits": [ 28 ],
+          "attributes": {
+          }
+        },
+        "$procmux$9.B": {
+          "hide_name": 1,
+          "bits": [ 4, 18, 4, 4, 4, "0" ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "./rtl/overlapping_mo_101.sv:22.42-22.42|./rtl/overlapping_mo_101.sv:19.5-25.12|/home/mohamedahmed/Utils/oss-cad-suite/lib/../share/yosys/techmap.v:579.28-579.29"
+          }
+        },
+        "$procmux$9.B_AND_S": {
+          "hide_name": 1,
+          "bits": [ 17, 19, 15, 15, 13, "0" ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "./rtl/overlapping_mo_101.sv:22.42-22.42|./rtl/overlapping_mo_101.sv:19.5-25.12|/home/mohamedahmed/Utils/oss-cad-suite/lib/../share/yosys/techmap.v:591.28-591.35"
+          }
+        },
+        "$procmux$9.S": {
+          "hide_name": 1,
+          "bits": [ 16, 14, 12 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "./rtl/overlapping_mo_101.sv:22.42-22.42|./rtl/overlapping_mo_101.sv:19.5-25.12|/home/mohamedahmed/Utils/oss-cad-suite/lib/../share/yosys/techmap.v:581.22-581.23"
+          }
+        },
+        "$procmux$9.Y_B": {
+          "hide_name": 1,
+          "bits": [ 25, 23 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "./rtl/overlapping_mo_101.sv:22.42-22.42|./rtl/overlapping_mo_101.sv:19.5-25.12|/home/mohamedahmed/Utils/oss-cad-suite/lib/../share/yosys/techmap.v:586.19-586.22"
+          }
+        },
+        "$techmap$procmux$9.$reduce_or$/home/mohamedahmed/Utils/oss-cad-suite/lib/../share/yosys/techmap.v:605$114_Y": {
+          "hide_name": 1,
+          "bits": [ 27 ],
+          "attributes": {
+            "src": "./rtl/overlapping_mo_101.sv:22.42-22.42|./rtl/overlapping_mo_101.sv:19.5-25.12|/home/mohamedahmed/Utils/oss-cad-suite/lib/../share/yosys/techmap.v:605.13-605.15"
+          }
+        },
+        "arstn": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "./rtl/overlapping_mo_101.sv:2.24-2.29"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "./rtl/overlapping_mo_101.sv:2.18-2.21"
+          }
+        },
+        "current_state": {
+          "hide_name": 0,
+          "bits": [ 7, 9 ],
+          "attributes": {
+            "enum_type": "$enum0",
+            "enum_value_00": "\\S0",
+            "enum_value_01": "\\S1",
+            "enum_value_10": "\\S2",
+            "enum_value_11": "\\S3",
+            "src": "./rtl/overlapping_mo_101.sv:8.9-8.22",
+            "wiretype": "\\state_t"
+          }
+        },
+        "in": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "./rtl/overlapping_mo_101.sv:2.32-2.34"
+          }
+        },
+        "next_state": {
+          "hide_name": 0,
+          "bits": [ 6, 8 ],
+          "attributes": {
+            "enum_type": "$enum0",
+            "enum_value_00": "\\S0",
+            "enum_value_01": "\\S1",
+            "enum_value_10": "\\S2",
+            "enum_value_11": "\\S3",
+            "src": "./rtl/overlapping_mo_101.sv:8.25-8.35",
+            "wiretype": "\\state_t"
+          }
+        },
+        "out": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "./rtl/overlapping_mo_101.sv:3.18-3.21"
+          }
+        }
+      }
+    }
+  }
+}

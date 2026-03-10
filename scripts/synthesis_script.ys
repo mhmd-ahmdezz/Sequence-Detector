@@ -1,0 +1,11 @@
+read_verilog -sv ./rtl/overlapping_mo_101.sv
+hierarchy -top overlap_mo_101
+proc
+opt
+techmap
+opt
+clean
+stat
+write_json overlap_mo_101.vis.json
+write_verilog -sv overlap_mo_101.vis.sv
+show -format png -prefix overlap_mo_101.vis.yosys
