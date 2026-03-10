@@ -25,3 +25,4 @@ Verification was performed using a simple self-checking SystemVerilog testbench.
 
 ## 5. Synthesis Results (Yosys)
 Synthesis was performed using the **Yosys Open Synthesis Suite** targeting the generic cell library.
+![Synthesis Results](synthesis/overlap_mo_101.vis.yosys.png)
