@@ -21,6 +21,8 @@ Verification was performed using a simple self-checking SystemVerilog testbench.
 - **Tool:** Modelsim
 - **Test Scenarios:** Reset behavior, overlapping sequence detection
 
+![Waveform Snippets](<img width="1814" height="162" alt="image" src="https://github.com/user-attachments/assets/b91d23d7-3b8e-4626-94a7-219689e857b3" />)
+
 
 
 ## 5. Synthesis Results (Yosys)
